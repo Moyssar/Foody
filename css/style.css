@@ -1,0 +1,720 @@
+@import url("https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap");
+* {
+  /* font-family: "Brush Script MT", "san-serif"; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Srisakdi", system-ui;
+}
+::before,
+::after {
+  transition: all 300ms ease;
+}
+/* *** globle */
+:root {
+  --header-font-style: "Srisakdi", system-ui;
+  --normal-font-style: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-header {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  color: #27364a;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  font-family: var(--normal-font-style);
+  background-color: #151d25;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+/* *** globle *** */
+/* navbar start */
+span {
+  background-color: #eee;
+  border-radius: 10%;
+  height: 50px;
+  width: 50px;
+}
+.navbar {
+  background-color: #575b5f;
+  padding: 10px 0;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .container ul {
+  display: flex;
+}
+.navbar .container li:not(:last-of-type) {
+  margin-right: 10px;
+}
+.navbar .container li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.social i {
+  color: #ddd;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.social .facebook:hover {
+  color: #1212f8;
+}
+.social .instagram:hover {
+  color: #ce12f8;
+}
+.social .twitter:hover {
+  color: #457aff;
+}
+/* navbar end */
+/* food menu start */
+.menu {
+  height: 450px;
+  background-color: #999;
+}
+.menu .container {
+  color: #fff;
+}
+.bars {
+  margin: 0 auto 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.container h2 {
+  padding-top: 80px;
+  /* font-weight: 400; */
+}
+.container p {
+  font-family: var(--normal-font-style);
+  font-size: 20px;
+  font-weight: 400;
+  width: 250px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.container button {
+  letter-spacing: 1px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 20px;
+  font-size: 12px;
+  color: #fff;
+
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 12px;
+}
+/* food menu end */
+/* story start */
+.story {
+  position: relative;
+  height: 250px;
+  overflow: visible;
+}
+.story .container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  padding: 0;
+  z-index: 5;
+  display: flex;
+}
+.story .container .story-img {
+  width: 50%;
+}
+.story .container .story-img img {
+  width: 100%;
+}
+.story .container .the-story {
+  width: 50%;
+  position: relative;
+  padding: 0 50px;
+}
+.story .container .the-story h2 {
+  text-align: left;
+  font-size: 35px;
+}
+.story .container .the-story .bars {
+  text-align: left;
+}
+.story .container .the-story p {
+  font-size: 16px;
+  text-align: left;
+  color: #999;
+  width: 100%;
+  margin-top: 25px;
+}
+.story .container .the-story button {
+  font-family: var(--normal-font-style);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 10px;
+  width: 90px;
+  position: relative;
+  margin: 0;
+}
+/* story end */
+/* quote start */
+.quote {
+  background-color: #999;
+  height: 300px;
+}
+.quote .container {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.quote .container q {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: var(--normal-font-style);
+  display: block;
+  text-align: center;
+  margin: 150px auto 5px;
+}
+.quote .container button {
+  background-color: transparent;
+  font-family: var(--header-font-style);
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* quote end */
+/* present start */
+.present .container {
+  display: block;
+}
+.present .container h2 {
+  padding: 0 15px;
+  margin: 75px auto;
+  text-transform: capitalize;
+}
+.present .container .present-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.present .container h2:last-of-type {
+  margin-bottom: 10px;
+}
+.arrow {
+  color: #fff;
+  margin: 30px auto;
+  background-color: #151d25;
+  padding: 7px 0;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+/* present end */
+/* video start */
+.vid-section {
+  background-color: #666;
+  height: 360px;
+  width: 100%;
+  z-index: 0;
+}
+.vid-section .video {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  z-index: 1;
+}
+.vid-section > div {
+  position: absolute;
+  color: #fff;
+  background-color: #00000050;
+  z-index: 2;
+  width: 100%;
+  height: 360px;
+  text-align: center;
+  padding-top: 160px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+}
+.vid-section button {
+  z-index: 2;
+  display: block;
+  margin: 20px auto 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 0px solid #fff;
+  outline: 3px solid #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.vid-section button:hover {
+  outline-offset: 3px;
+}
+.vid-section button:focus {
+  outline-offset: 0px;
+}
+.vid-section button .play {
+  background-color: transparent;
+  height: 0px;
+  width: 0;
+  border-top: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-left: 12.5px solid #666;
+  border-bottom: 12.5px solid transparent;
+  position: absolute;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* video end */
+/* subscrebtion start */
+.subscribe {
+  width: 100%;
+  background-color: #fff;
+}
+.subscribe .container {
+  display: block;
+}
+.subscribe .container h2 {
+  padding-bottom: 30px;
+}
+.subscribe .container p {
+  width: 550px;
+  color: #28374b;
+  padding-bottom: 30px;
+}
+.subscribe .container .sign-up {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.subscribe .container .sign-up input {
+  width: 250px;
+  height: 30px;
+  border: none;
+  outline: 2px solid #999;
+  margin-left: auto;
+  border-radius: 2px 0 0 2px;
+}
+.subscribe .container .sign-up input:placeholder-shown {
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+.subscribe .container .sign-up button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-top: -2px;
+  width: 90px;
+  text-transform: capitalize;
+  height: 34px;
+  border-radius: 0 4px 4px 0;
+}
+.subscribe .container .sub-imgs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  margin-top: 40px;
+}
+/* subscrebtion end */
+/* footer start */
+.info {
+  background-color: #27364a;
+  height: 250px;
+  padding-top: 40px;
+  color: #ddd;
+  padding-bottom: 30px;
+  position: relative;
+}
+.info .container {
+  display: flex;
+  justify-content: space-between;
+}
+.location {
+  margin-right: 450px;
+}
+.location h3,
+.hours h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.location p,
+.hours p {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 15px;
+  width: 100%;
+}
+.location span,
+.hours span {
+  background-color: transparent;
+  /* background-color: #f00; */
+  margin-left: 50px;
+}
+footer {
+  background-color: #151d25;
+}
+footer .container {
+  justify-content: space-between;
+  display: flex;
+  color: #ddd;
+  padding: 18px 50px;
+  height: 50px;
+  overflow: hidden;
+}
+footer .container span {
+  background-color: transparent;
+  width: 50%;
+  color: #999;
+}
+footer .container ul {
+  height: fit-content;
+  padding-top: 0;
+  text-transform: capitalize;
+  display: flex;
+}
+footer .container ul li:not(:last-of-type) {
+  margin-right: 10px;
+}
+/* footer end */
+/* *** responsive design *** */
+/* *** Tablets design *** */
+@media (max-width: 990px) {
+  .container {
+    width: 970px;
+    /* overflow: hidden; */
+    max-width: 100%;
+  }
+  .section-header {
+    font-size: 35px;
+  }
+  .story {
+    position: relative;
+    height: 250px;
+    overflow: visible;
+  }
+  .story .container {
+    position: relative;
+    height: 270px;
+  }
+  .story .container .the-story {
+    width: 50%;
+    position: relative;
+    padding: 0 20px;
+  }
+  .story .container .the-story h2 {
+    padding: 15px 0 5px;
+    font-size: 30px;
+  }
+  .story .container .the-story p {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  .story .container .the-story button {
+    width: 80px;
+    position: relative;
+    margin-top: -8px;
+  }
+  .quote {
+    background-color: #999;
+    height: 220px;
+  }
+  .quote .container q {
+    font-size: 18px;
+    margin: 90px auto 5px;
+  }
+  .present .container {
+    display: block;
+  }
+  .present .container h2 {
+    padding: 0 15px;
+    margin: 75px auto;
+    text-transform: capitalize;
+  }
+  .present .container .present-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .present .container .present-imgs img {
+    width: 100%;
+  }
+  .arrow {
+    padding: 9px 0;
+    font-size: 18px;
+  }
+  .vid-section {
+    height: 250px;
+  }
+  .vid-section .video {
+    height: 250px;
+  }
+  .vid-section > div {
+    height: 250px;
+    padding-top: 90px;
+    font-size: 18px;
+  }
+  .vid-section button {
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border-radius: 50%;
+    position: relative;
+  }
+  .vid-section button:hover {
+    outline-offset: 3px;
+  }
+  .vid-section button:focus {
+    outline-offset: 0px;
+  }
+  .vid-section button .play {
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid #666;
+    border-bottom: 10px solid transparent;
+  }
+  .subscribe .container h2 {
+    padding-bottom: 20px;
+  }
+  .subscribe .container p {
+    width: 100%;
+    padding: 0 20px 30px;
+  }
+  .subscribe .container .sign-up {
+    width: 100%;
+  }
+  .subscribe .container .sub-imgs {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .subscribe .container .sub-imgs img {
+    width: 100%;
+  }
+  .info {
+    height: 200px;
+    padding: 20px 0px;
+  }
+  .location {
+    margin-right: 100px;
+  }
+  .location h3,
+  .hours h3 {
+    font-size: 25px;
+  }
+  .location p,
+  .hours p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 15px;
+  }
+  .location span,
+  .hours span {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    margin: 0 0;
+  }
+  footer {
+    background-color: #151d25;
+  }
+  footer .container {
+    padding: 18px 10px;
+    height: 50px;
+    overflow: hidden;
+  }
+  footer .container span {
+    width: 70%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+/* *** mobile design *** */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .section-header {
+    font-size: 25px;
+  }
+  span {
+    background-color: #eee;
+    border-radius: 10%;
+    height: 30px;
+    width: 30px;
+  }
+  .navbar .container li:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .social i {
+    color: #ddd;
+    font-size: 16px;
+  }
+  .social i:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .menu {
+    height: 330px;
+    background-color: #999;
+  }
+  .bars {
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .container h2 {
+    padding-top: 60px;
+  }
+  .container p {
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto 10px;
+  }
+  .container button {
+    font-size: 10px;
+  }
+  .story {
+    position: relative;
+    height: 320px;
+    overflow: visible;
+  }
+  .story .container {
+    position: relative;
+    width: 100%;
+    inset: 0;
+    background-color: #fff;
+    padding: 0;
+    z-index: 5;
+    display: block;
+  }
+  .story .container .story-img {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+  }
+  .story .container .story-img img {
+    margin-top: -100px;
+    width: 100%;
+  }
+  .story .container .the-story {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .story .container .the-story h2,
+  .story .container .the-story .bars,
+  .story .container .the-story p {
+    text-align: center;
+  }
+  .story .container .the-story .bars {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .story .container .the-story p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .story .container .the-story button {
+    width: 80px;
+    margin: 0 auto;
+  }
+  .quote {
+    height: 200px;
+  }
+  .quote .container q {
+    font-size: 16px;
+    text-align: center;
+    margin: 80px auto 10px;
+    padding: 0 10px;
+  }
+  .quote .container button {
+    font-size: 16px;
+  }
+  .vid-section {
+    background-color: #666;
+    height: 180px;
+  }
+  .vid-section .video {
+    height: 180px;
+  }
+  .vid-section > div {
+    height: 180px;
+    padding-top: 60px;
+    font-size: 16px;
+  }
+  .vid-section button .play {
+    border-top: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-left: 9px solid #666;
+    border-bottom: 9px solid transparent;
+    left: 69%;
+  }
+  .subscribe .container p {
+    width: 100%;
+  }
+  .subscribe .container .sub-imgs {
+    display: block;
+    margin-top: 40px;
+  }
+  .subscribe .container .sub-imgs img {
+    padding: 0;
+  }
+  .info {
+    height: 300px;
+    padding: 20px;
+  }
+  .info .container {
+    display: block;
+  }
+  .location {
+    margin: 0 0 30px 0;
+  }
+  .location p,
+  .hours p {
+    margin: 0;
+    display: flex;
+    width: 100%;
+  }
+  .location span,
+  .hours span {
+    display: flex;
+    margin: 0 0 0 5px;
+    width: 200px;
+  }
+  footer .container {
+    padding: 10px;
+    height: 40px;
+  }
+  footer .container span {
+    width: 100%;
+  }
+  footer .container ul {
+    display: none;
+  }
+}
